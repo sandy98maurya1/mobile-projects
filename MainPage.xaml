@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AmIReady"
+             x:Class="AmIReady.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>            
+            <Button x:Name="CameraButton" Text="Take Photo" Grid.Row="1" Clicked="CameraButton_Clicked" />
+            <Button x:Name="Process" Text="Process photo" Grid.Row="2" Clicked="Process_Clicked"></Button>
+            <Image x:Name="PhotoImage" Source="pants_linen.png" Grid.Row="3"/>
+            <Button Text="" x:Name="TextBox1" Grid.Row="4" />
+            <Button Text="" x:Name="TextBox2" Grid.Row="5"  />
+            <Button Text="" x:Name="TextBox3" Grid.Row="6"  />
+        </Grid>        
+    </StackLayout>
+
+</ContentPage>
